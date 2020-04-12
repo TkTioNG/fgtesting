@@ -409,10 +409,7 @@ class Graph(object):
                 pair = list(zip(vals, marg))
             if printm:
                 for pa in pair:
-                    if rv.name.rfind('_') == -1:
-                        print('\t', pa[0], '\t', pa[1])
-                    elif pa[1] > 0.4 and pa[0] != '0':
-                        print('\t', pa[0], '\t', pa[1])
+                    print('\t', pa[0], '\t', pa[1])
                         
             if printf:
                 msgj[str(rv)] = pair
